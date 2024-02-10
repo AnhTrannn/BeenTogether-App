@@ -9,8 +9,8 @@ updateTime();
 setInterval(updateTime, 1000);
 
 function updateTime() {
-    let today = new Date();
-    let timeDifference = today - startDate;
+    let currentDay = new Date();
+    let timeDifference = currentDay - startDate;
 
     // Calculate total seconds
     let totalSeconds = Math.floor(timeDifference / 1000);
