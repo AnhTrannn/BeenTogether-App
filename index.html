@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Been Together</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Ẩn scrollbar mượt trên mọi trình duyệt -->
+  <style>
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
+  <title>Been Together</title>
 </head>
-<body class="bg-rose-300 min-w-full min-h-screen m-auto p-auto font-sans flex justify-center items-center flex-col shadow-md">
-    <div class="container1 bg-white shadow-amber-800 p-1 w-{80%} rounded-md">
-        <div class="about flex items-center pt-0 pr-4 mb-4 mt-4 relative">
-            <div class="info flex items-center">
-                <div class="details m-4 text-center text-lg">
-                    <img class="w-50 h-72 rounded-sm" src="Male.JPG" alt="">
-                    <p class="name font-mono m-{4px}">Bin</p>
-                    <p class="birth m-{4px} font-semibold">24.05.1998</p>
-                </div>
-            </div>
-            <div>
-                <img class="flex items-center justify-center animate-ping w-12 mx-12" src="love-always-wins.png" alt="heart">
-            </div>
-            <div class="info flex items-center">
-                <div class="details text-center text-lg">
-                    <img class="w-50 h-72 rounded-sm" src="Female.JPG" alt="">
-                    <p class="name font-mono m-{4px}">Bơ</p>
-                    <p class="birth m-{4px} font-semibold"> 28.11.1999</p>
-                </div>
-            </div>
-        </div>
-        <div class="time flex flex-col justify-center items-center">
-            <h2 class="font-sans text-3xl font-bold italic my-3">We have been together for: </h2>
-            <h3 class="days mb-3 font-semibold text-xl"><span>0000</span>&nbsp;DAYS</h3>
-            <p class="time2 mb-3 font-normal text-lg">
-                <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
-            </p>
-        </div>
+
+<body class="min-h-screen w-full flex justify-center items-center p-2 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('bg.JPG');">
+
+  <div class="bg-white/70 backdrop-blur-md p-6 rounded-xl w-full max-w-3xl flex flex-col items-center">
+
+    <!-- ABOUT SECTION -->
+    <div class="flex flex-row items-center justify-center gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none w-full select-none">
+
+      <!-- Male -->
+      <div class="text-center flex-shrink-0 snap-center">
+        <img class="w-[25vw] max-w-[150px] aspect-[2/3] object-cover rounded-md mx-auto" src="Male.JPG" alt="">
+        <p class="font-mono mt-1 text-[3.5vw] md:text-base">Bin</p>
+        <p class="font-semibold text-[3.5vw] md:text-base">24.05.1998</p>
+      </div>
+
+      <!-- Heart -->
+      <img class="animate-pulse w-[12vw] max-w-[70px] flex-shrink-0 snap-center" src="love-always-wins.png" alt="heart">
+
+      <!-- Female -->
+      <div class="text-center flex-shrink-0 snap-center">
+        <img class="w-[25vw] max-w-[150px] aspect-[2/3] object-cover rounded-md mx-auto" src="Female.JPG" alt="">
+        <p class="font-mono mt-1 text-[3.5vw] md:text-base">Bơ</p>
+        <p class="font-semibold text-[3.5vw] md:text-base">28.11.1999</p>
+      </div>
+
     </div>
-    <script src="main.js"></script>
+
+    <!-- TIME DISPLAY -->
+    <div class="text-center mt-6">
+      <h2 class="font-bold italic text-[4.5vw] md:text-3xl mb-3">
+        We have been together for:
+      </h2>
+
+      <h3 class="days font-semibold text-[4vw] md:text-xl mb-2">
+        <span>0000</span> DAYS
+      </h3>
+
+      <p class="time2 text-[4vw] md:text-lg">
+        <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
+      </p>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
 </body>
+
 </html>
