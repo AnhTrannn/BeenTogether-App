@@ -3,7 +3,7 @@ let hours = document.querySelector('.hours');
 let min = document.querySelector('.minutes');
 let second = document.querySelector('.seconds');
 
-let startDate = new Date(2020, 0, 25);
+let startDate = new Date(2021, 2, 12);
 
 updateTime();
 setInterval(updateTime, 1000);
