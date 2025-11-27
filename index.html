@@ -46,21 +46,45 @@
     </div>
 
     <!-- TIME DISPLAY -->
-    <div class="text-center mt-4 sm:mt-6">
-      <h2 class="font-bold italic text-[5vw] sm:text-[4.5vw] md:text-3xl mb-2 sm:mb-3">
+<div class="text-center mt-4 sm:mt-6">
+    <h2 class="font-bold italic text-[5vw] sm:text-[4.5vw] md:text-3xl mb-2 sm:mb-3">
         We have been together for:
-      </h2>
+    </h2>
 
-      <h3 class="days font-semibold text-[4.5vw] sm:text-[4vw] md:text-xl mb-2">
-        <span>0000</span> DAYS
-      </h3>
+    <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3 text-white">
 
-      <p class="time2 text-[4.5vw] sm:text-[4vw] md:text-lg">
-        <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
-      </p>
+        <div class="bg-pink-400/80 backdrop-blur-md p-2 rounded-lg">
+            <p class="text-[4vw] sm:text-xl font-bold years">00</p>
+            <span class="text-[3vw] sm:text-sm">Years</span>
+        </div>
+
+        <div class="bg-red-400/80 backdrop-blur-md p-2 rounded-lg">
+            <p class="text-[4vw] sm:text-xl font-bold months">00</p>
+            <span class="text-[3vw] sm:text-sm">Months</span>
+        </div>
+
+        <div class="bg-purple-400/80 backdrop-blur-md p-2 rounded-lg">
+            <p class="text-[4vw] sm:text-xl font-bold days"><span>00</span></p>
+            <span class="text-[3vw] sm:text-sm">Days</span>
+        </div>
+
+        <div class="bg-blue-400/80 backdrop-blur-md p-2 rounded-lg">
+            <p class="text-[4vw] sm:text-xl font-bold hours">00</p>
+            <span class="text-[3vw] sm:text-sm">Hours</span>
+        </div>
+
+        <div class="bg-teal-400/80 backdrop-blur-md p-2 rounded-lg">
+            <p class="text-[4vw] sm:text-xl font-bold minutes">00</p>
+            <span class="text-[3vw] sm:text-sm">Minutes</span>
+        </div>
+
+        <div class="bg-green-400/80 backdrop-blur-md p-2 rounded-lg">
+            <p class="text-[4vw] sm:text-xl font-bold seconds">00</p>
+            <span class="text-[3vw] sm:text-sm">Seconds</span>
+        </div>
+
     </div>
-
-  </div>
+</div>
 
   <script src="main.js"></script>
 </body>
